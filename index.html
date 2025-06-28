@@ -3,11 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SE-LAB11</title>
+    <title>Dashboard Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            width: 200px;
+            background: #2d3e50;
+            color: #fff;
+            height: 100vh;
+            position: fixed;
+            top: 0; left: 0;
+            padding-top: 30px;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 15px 20px;
+            cursor: pointer;
+        }
+        .sidebar ul li:hover {
+            background: #1a232f;
+        }
+        .main-content {
+            margin-left: 200px;
+            padding: 30px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
-    <p>Staged Version</p> 
-    <p>Commited Version</p>
-    <p>Hi</p>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li>Home</li>
+            <li>Profile</li>
+            <li>Settings</li>
+            <li>Logout</li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Selamat Datang di Dashboard</h1>
+        <div class="card">
+            <h3>Statistik</h3>
+            <p>Pengguna aktif: 120</p>
+            <p>Pesanan hari ini: 15</p>
+        </div>
+        <div class="card">
+            <h3>Pengumuman</h3>
+            <p>Tidak ada pengumuman baru.</p>
+        </div>
+    </div>
 </body>
 </html>
