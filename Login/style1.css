@@ -1,0 +1,259 @@
+body{
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    margin: 0;
+}
+
+
+h2 {
+    font-family: 'Inter', sans-serif; /* Fallback to generic sans-serif */
+    font-weight: 500; 
+}
+
+.background{
+    background-image: url('test.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+header h3 {   
+    font-family: 'Inter', sans-serif; 
+    font-weight: 500; 
+    font-size: 1.1em; 
+    margin: 0; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 0.9375rem; /* 15px*/
+}
+
+nav ul li a {
+    font-family: 'Inter',sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #007bff; /* Change to your desired hover color */
+}
+
+.main-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    height: auto;
+    width: 80%;
+    gap: 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top:300px;
+    margin-bottom: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+
+}
+
+.form-container{
+    flex:1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-container form{
+    text-align: center;
+}
+
+.form-container label{
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding:10px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+.image-container{
+    background-image: url('totoro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.forgot-password,.social-login a,
+.register a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p, .forgot-password,.social-login a,
+.register a {
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.social-login a:hover,
+.register a:hover {
+    text-decoration: underline;
+}
+
+.forgot-password,.social-login,.register{
+   text-align: center;
+   margin-top: 20px;
+   width: 100%;
+}
+
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Add padding for spacing */
+    text-align: center; /* Center-align text */
+    width: 100%; /* Ensure it spans the full width */
+    position: relative; /* Keep it in the normal flow */
+    bottom: 0;
+}
+
+.footer-container {
+    max-width: 1200px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+.footer-container p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Adjust font size */
+}
+
+.footer-links {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 10px 0 0; /* Add spacing above the links */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the links */
+    gap: 15px; /* Add spacing between links */
+}
+
+.footer-links li {
+    display: inline; /* Ensure links are inline */
+}
+
+.footer-links a {
+    color: #fff; /* Blue link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Adjust font size */
+    transition: color 0.3s ease; /* Add hover effect */
+}
+
+.footer-links a:hover {
+    color: #ccc; /* Darker blue on hover */
+}
+

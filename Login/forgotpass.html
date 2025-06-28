@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h3>Nadzira's Website</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="background">
+
+
+    </div>
+
+    <section class="main-container">
+        <div class="form-container">
+            <h2>Please insert your email</h2>
+            <form action="login.php" method="POST">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Send Verification</button>
+            </form>
+
+            <div class="social-login">
+                <p>Or login with:</p>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.google.com" target="_blank">Google</a>
+            </div> 
+
+            <div class="register">
+                <p>New user? <a href="register.html">Create an account</a></p>
+            </div>
+        </div>
+
+    
+        <div class="image-container"></div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Nadzira's Website. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
